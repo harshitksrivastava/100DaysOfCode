@@ -29,7 +29,7 @@ if __name__ == "__main__":
     T = int(input())
     for _ in range(T):
         # length = input().split()
-        input_array = [2,6,3,4, 7, 2, 10, 3, 2, 1 ]
+        input_array = [2, 6, 3, 4, 7, 2, 10, 3, 2, 1]
     min_value = min_height_difference(input_array, len(input_array), 5)
     print(min_value)
 
