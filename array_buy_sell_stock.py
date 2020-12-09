@@ -1,4 +1,9 @@
-# recursive is more time and space taking approach but provides with an answer with O(N) time complexity
+# Best time to buy and Sell stock
+# If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock),
+# design an algorithm to find the maximum profit. Note that you cannot sell a stock before you buy one.
+
+
+# this is more time and space taking approach but provides with an answer with O(N) time complexity-- not recommended
 def recursive_func(i, elem, arr):
     if i >= len(arr):
         return 0
@@ -44,3 +49,13 @@ if __name__ == "__main__":
         # max_pro = maximum_profit(input_array, len(input_array))
         max_pro = dynamic_max_profit(input_array)
     print(max_pro)
+
+
+# Input: [7,1,5,3,6,4]
+# Output: 5
+# Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+#              Not 7-1 = 6, as selling price needs to be larger than buying price.
+
+# Input: [7,6,4,3,1]
+# Output: 0
+# Explanation: In this case, no transaction is done, i.e. max profit = 0.
