@@ -13,8 +13,16 @@ class Solution:
         else:
             return 0
 
+    def seive(self,A):
+        I=[]
+        for i in range(0,A+1):
+            p = self.isPrime(i)
+            if p==1:
+                I.append(i)
+        return I
+
 
 if __name__ == "__main__":
     pascal = Solution()
-    ans = pascal.squareSum(5)
+    ans = pascal.seive(7)
     print(ans)
