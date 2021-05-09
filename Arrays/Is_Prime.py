@@ -24,5 +24,5 @@ class Solution:
 
 if __name__ == "__main__":
     pascal = Solution()
-    ans = pascal.seive(7)
+    ans = pascal.seive(18)
     print(ans)

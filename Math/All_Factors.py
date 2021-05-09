@@ -1,4 +1,3 @@
-import cmath
 import math
 
 
@@ -18,5 +17,6 @@ class Solution:
 
 if __name__ == '__main__':
     allfacto = Solution()
-    li = allfacto.allFactors(38808)
+    # 38808
+    li = allfacto.allFactors(36)
     print(li)
