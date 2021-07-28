@@ -5,7 +5,7 @@ class Solution:
         isPrime = [0] * (A + 1)
         self.findPrimePair(A, isPrime)
         for i in range(0, A):
-            if (isPrime[i] and isPrime[A - i]):
+            if isPrime[i] and isPrime[A - i]:
                 a=[]
                 a.append(i)
                 a.append(A - i)

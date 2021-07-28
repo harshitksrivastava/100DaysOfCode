@@ -15,20 +15,22 @@ def next_permutation(nums):
                 if temp[j] > nums[i - 1]:
                     temp[j], nums[i - 1] = nums[i - 1], temp[j]
                     nums[i:] = temp
-                    globals()['f'] = 1
+                    f = 1
                     break
                 else:
                     j += 1
-            if globals()['f'] == 1:
-                break
+            if f == 1:
+                return nums
     else:
         nums.sort()
+        return nums
 
 
 if __name__ == "__main__":
-    input_array = [4, 5, 7, 3, 2, 5, 4, 2, 1]
-    next_permutation(input_array)
-    print(input_array)
+    # input_array = [4, 5, 7, 3, 2, 5, 4, 2, 1]
+    input_array = [ 1]
+    a = next_permutation(input_array)
+    print(a)
 
 # Input: nums = [1,2,3]
 # Output: [1,3,2]

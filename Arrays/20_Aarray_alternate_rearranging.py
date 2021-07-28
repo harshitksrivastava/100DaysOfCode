@@ -55,6 +55,3 @@ print(arr)
 
 print("\nRearranged array is:")
 print(rearrange(arr, len(arr)))
-
-# This code is contributed
-# by Charan Sai
