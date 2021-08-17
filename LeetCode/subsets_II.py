@@ -15,7 +15,7 @@ class Solution:
             temp = list(itertools.compress(nums, a))
             if temp not in ans:
                 ans.append(temp)
-            i+=1
+            i += 1
         return ans
 
 
