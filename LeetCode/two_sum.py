@@ -1,21 +1,26 @@
-# Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to
-# target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
-# You can return the answer in any order.
+# https://leetcode.com/problems/two-sum/
 
+# Time Complexity: O(n)
 
 class Solution:
+
+    # function returns list of indexes of numbers which add upto given target
     def find_two_sum(self, nums, target):
-        """ function returns list of indexes of numbers which add upto given target"""
-        nums_dict = {}          # to store number with their index
-        ans_list = []           # to store the final index of the result obtained
+        # to store number with their index
+        nums_dict = {}
+
+        # looping through the nums list
         for i in range(0, len(nums)):
-            j = target - nums[i]                # j stores the difference of the target and present number from nums
-            if j in nums_dict.keys():           # if j exist in keys of the dictionary/map then we have a match pair
-                ans_list.extend([nums_dict[j], i])
-                break
-            else:
-                nums_dict[nums[i]] = i          # if j not in dictionary then add the number with it's index
-        return ans_list
+
+            # j stores the difference of the target and present number from nums
+            j = target - nums[i]
+
+            # if j exist in keys of the dictionary/map then we have a match pair
+            if j in nums_dict.keys():
+                return nums_dict[j], i
+
+            # if j not in dictionary then add the number with it's index
+            nums_dict[nums[i]] = i
 
 
 if __name__ == "__main__":
@@ -27,7 +32,6 @@ if __name__ == "__main__":
     print(ans)
     assert (nums[ans[0]] + nums[ans[1]]) == target, 'not found'
     print(f"{nums[ans[0]]} and {nums[ans[1]]} at {ans[0]} and {ans[1]} adds up to {target}.")
-
 
 # Example 1:
 # Input: nums = [2,7,11,15], target = 9
