@@ -1,6 +1,8 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 # Problem 121
 
+# Time Complexity: O(n)
+
 class Solution:
 
     # minimum_so_far approach uses the idea of Kadane's algorithm
