@@ -19,7 +19,7 @@ class Solution:
             p *= nums[i]
         return product_array
 
-    def product_except_self_one_pass(self,nums):
+    def product_except_self_one_pass(self, nums):
         product_array = [1] * len(nums)
         left, right = 1, 1
         for i in range(len(nums)):

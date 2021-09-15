@@ -28,7 +28,7 @@ def next_permutation(nums):
 
 if __name__ == "__main__":
     # input_array = [4, 5, 7, 3, 2, 5, 4, 2, 1]
-    input_array = [ 1]
+    input_array = [1]
     a = next_permutation(input_array)
     print(a)
 
