@@ -32,6 +32,9 @@ class Solution:
             return -1
 
     # solution with O(1) space complexity
+    # Let's say we knew S as the sum of the numbers, and we are at index i. If we
+    # knew the sum of numbers leftsum that are to the left of index i, then the other sum to the right of the index
+    # would just be S - nums[i] - leftsum.
     def findPivot(self, nums):
         total_sum = sum(nums)
         left_sum = 0
