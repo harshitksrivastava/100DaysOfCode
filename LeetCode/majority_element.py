@@ -32,7 +32,7 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    ans = sol.find_majority_element([3, 2, 3])
+    ans = sol.find_majority_element([0,1,2,1,2])
     print(ans)
 
 
