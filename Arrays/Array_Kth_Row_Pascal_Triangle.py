@@ -45,6 +45,7 @@ class PascalTriangle:
             nth_row.append(val)
         return nth_row
 
+
 if __name__ == "__main__":
     pascal = PascalTriangle()
     ans = pascal.solve(3)
